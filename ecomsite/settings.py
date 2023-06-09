@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-v+m*h^egg&l)hj%md50(gn=io-4y2a*!o*6@h4q$i=&iky6mpe
 DEBUG = False
 
 # 
-ALLOWED_HOSTS = ['localhost','ecomapi534.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost','http://ecomapi534.pythonanywhere.com/','ecomapi534.pythonanywhere.com']
 
 
 # Application definition
