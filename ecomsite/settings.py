@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v+m*h^egg&l)hj%md50(gn=io-4y2a*!o*6@h4q$i=&iky6mpe'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # 
-ALLOWED_HOSTS = ['localhost','http://ecomapi534.pythonanywhere.com/','ecomapi534.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost','ecomapi534.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -88,10 +88,29 @@ WSGI_APPLICATION = 'ecomsite.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+    # using sqlite3 database (default)
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+    
+    # using local postgresql pgadmin
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ecomsited',
+        'USER': 'postgres',
+        'PASSWORD': 'Pratham#534',
     }
+    
+    # using railway.app postgresql 
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'railway',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'tyZDa6j6dNjGuOKvl0Zh',
+    #     'HOST': 'containers-us-west-13.railway.app',
+    #     'PORT': '7668',
+    # }
 }
 
 
