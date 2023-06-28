@@ -95,22 +95,22 @@ DATABASES = {
     # }
     
     # using local postgresql pgadmin
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecomsited',
-        'USER': 'postgres',
-        'PASSWORD': 'Pratham#534',
-    }
-    
-    # using railway.app postgresql 
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'railway',
+    #     'NAME': 'ecomsited',
     #     'USER': 'postgres',
-    #     'PASSWORD': 'tyZDa6j6dNjGuOKvl0Zh',
-    #     'HOST': 'containers-us-west-13.railway.app',
-    #     'PORT': '7668',
+    #     'PASSWORD': 'Pratham#534',
     # }
+    
+    # using railway.app postgresql 
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'tyZDa6j6dNjGuOKvl0Zh',
+        'HOST': 'containers-us-west-13.railway.app',
+        'PORT': '7668',
+    }
 }
 
 
